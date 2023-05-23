@@ -30,18 +30,6 @@ To start using this template, follow these steps:
    npm run dev
    ```
 
-## Switching to Yarn
-
-If you prefer to use Yarn as your package manager, you can easily switch from npm by running the following command:
-
-```
-yarn import
-```
-
-This will generate a `yarn.lock` file and import the dependencies from your `package-lock.json`. Once this is done, you can safely remove the `package-lock.json` file and start using Yarn commands in place of npm commands.
-
-For example, instead of `npm install`, you would run `yarn install`.
-
 ## Available Scripts
 
 In the project directory, you can run the following scripts:
@@ -52,6 +40,32 @@ In the project directory, you can run the following scripts:
 - `npm run lint`: Runs the ESLint linter to check for code quality issues.
 - `npm run format`: Formats the code with Prettier.
 - `npm run test`: Runs the test suite (Note: You will need to add a test runner and test files to your project).
+
+## Switching to Yarn or pnpm
+
+If you prefer to use Yarn or pnpm as your package manager, you can easily switch from npm by following the steps below.
+
+### Switching to Yarn
+
+1. Run the following command to generate a `yarn.lock` file and import the dependencies from `package-lock.json`:
+
+   ```
+   yarn import
+   ```
+
+2. Once this is done, you can safely remove the `package-lock.json` file and start using Yarn commands in place of npm commands. For example, instead of `npm install`, you would run `yarn install`.
+
+### Switching to pnpm
+
+1. (Optional) Make sure you have a `pnpm-workspace.yaml` file if you're working with workspaces.
+
+2. Run the following command to generate a `pnpm-lock.yaml` file and import the dependencies from `package-lock.json`:
+
+   ```
+   pnpm import
+   ```
+
+3. Once this is done, you can safely remove the `package-lock.json` file (or other lockfiles) and start using pnpm commands in place of npm commands. For example, instead of `npm install`, you would run `pnpm install`.
 
 ## Configurations
 
